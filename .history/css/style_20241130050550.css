@@ -1,0 +1,157 @@
+header {
+    background-size: cover;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../img/header.png');
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background-color: #1C1E1F;
+    color: #B2B1B0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    min-height: calc(100vh - 160px);
+    flex-grow: 1;
+}
+
+#intro {
+    padding-top: 1rem;
+    position: relative;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: #c3c2c2;
+}
+
+#inputBuscar {
+    margin-bottom: 0.5rem;
+}
+
+input[type="search"] {
+    background-color: #181A1B;
+    border: 1px solid #B2B1B0;
+    color: #B2B1B0;
+}
+
+input[type="search"]:focus {
+    box-shadow: 0 0 5px #2D79CC;
+    background-color: #181A1B;
+    border: 1px solid #2D79CC;
+    color: #B2B1B0;
+}
+
+.form-control {
+    margin-bottom: 0.5rem;
+}
+
+
+#contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.card {
+    width: 22rem;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 2rem;
+    background-color: #181A1B;
+    color: #c3c2c2;
+    box-shadow: 0 0 4px 4px #2d7acc66;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    height: 250px;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-text.more {
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.card-text.full {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
+
+#more {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+
+
+footer {
+    background-color: #6caaed5b;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1.5rem;
+    box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    color: #c3c2c2
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #9b9a9b;
+    transform: scale(1.05);
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+footer .float-end {
+    transform: translateY(50%);
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .col-lg-6 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 100%;
+    }
+}

@@ -1,0 +1,121 @@
+body {
+    background-color: #1C1E1F;
+    color: #B2B1B0;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../img/background.png');
+    background-size: 80rem;
+    background-position: top 0.2rem right 2.4rem;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-height: calc(100vh - 160px);
+}
+
+#intro {
+    background-color: #1c1e1f9b;
+    padding-top: 1rem;
+    position: relative;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+input[type="search"] {
+    background-color: #181A1B;
+    border: 1px solid #B2B1B0;
+    color: #B2B1B0;
+}
+
+input[type="search"]:focus {
+    box-shadow: 0 0 5px #29c6e2;
+    background-color: #181A1B;
+    border: 1px solid #29c6e2;
+    color: #B2B1B0;
+}
+
+
+
+.card {
+    width: 22rem;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.card-body {
+    height: 340px;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limita a 4 líneas inicialmente */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out; /* Agregar transición */
+}
+
+.card-text.more {
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+
+.card-text.full {
+    -webkit-line-clamp: unset;
+    overflow: visible; /* Muestra todo el contenido */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #0d9eb8;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1.5rem;
+    box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    color: #c3c2c2
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #9b9a9b;
+    transform: scale(1.05);
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+footer .float-end {
+    transform: translateY(50%);
+}
